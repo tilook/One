@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Aldonia Servers</title>
+</head>
+<body>
+    
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.svg" class="menu-icon">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.svg">
+            </div>
+            <!--<img src="images/voice-search.svg" class="mic-icon">-->
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/create.svg">
+            <img src="images/more.svg">
+            <img src="images/notif.svg">
+            <a id = "aOpenLittleAccountMenu"><img id = "profileMenuPicture" class="user-icon" onclick="toggleProfileMenu()"></a>
+        </div>
+        <div class="sub-menu-wrap" id ="subProfileMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/jack.svg" alt="">
+                    <h2 id = "user-info-username">Guest</h2>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="images-menu/profile.png" alt="">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="images-menu/setting.png">
+                    <p>Settings</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="images-menu/help.png" alt="">
+                    <p>Help</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link" id = "sub-menu-login-logout">
+                    <img src="images-menu/logout.png" alt="">
+                    <p id = "sub-menu-login-logout-text"></p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content">
+        <div class="other-content">
+            <h4>Bienvenue sur le site d'Aldonia.</h4>
+            <h5>Vous trouverez ici de nombreux serveurs.</h5>
+        </div>
+    </section>
+
+    <section class="recent-servers">
+        <h2 class="index-info-text">Serveurs bumpés récemment:</h2>
+        <div class="columns">
+            <div id="column1" class="server-column"></div>
+            <div id="column2" class="server-column"></div>
+            <div id="column3" class="server-column"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Aldonia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
